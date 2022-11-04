@@ -21,8 +21,8 @@
 <body>
 
     <section class="slider-container">
-        <ion-icon name="chevron-back-outline" class="slider-icon__arrow leftArrow"></ion-icon>
-        <div class="slider-content">
+          <ion-icon name="chevron-back-outline" class="slider-icon__arrow leftArrow" onclick="plusSlides(-1)"></ion-icon>
+        <section class="slider-content fade">
             <div class="slider-content__text">
                 <h4 class="slider-text__msj">
                     LA MEJOR DEL VALLE...
@@ -38,35 +38,25 @@
             <div class="slider-image__menu">
                 <img src="./assets/images/chuleta.jpg" alt="">
             </div>
-            
-        </div>
-        <ion-icon name="chevron-forward-outline"class="slider-icon__arrow rightArrow"></ion-icon>
+        </section>
+        <section class="slider-content fade">
+            <div class="slider-content__text">
+                <h3 class="slider-text__nameMenu">
+                    POLLO ASADO
+                </h3>
+                <h2 class="slider-text__priceMenu">
+                    $39.000
+                </h2>
+                <span class="slider-text__terms">Aplican terminos y condicones</span>
+            </div>
+            <div class="slider-image__menu">
+                <img src="./assets/images/recetaspiernaspollo.jpg" alt="">
+            </div>
+        </section>
+        <ion-icon name="chevron-forward-outline"class="slider-icon__arrow rightArrow" onclick="plusSlides(1)"></ion-icon>
     </section>
 
-    <!-- <section class="slider">
-        <div class="slider-container">
-            <ion-icon name="chevron-back-outline" class="leftArrow"></ion-icon>
-            <section class="slider-body">
-                <h3 class="msj-menu">
-                    La mejor del valle...
-                </h3>
-                <h3 class="name-menu">
-                    Chuleta Valluna
-                </h3>
-                <h3 class="price">
-                    $28.500
-                </h3>
-                
-                <figure class="slider-picture">
-                    <img src="./assets/images/chuleta.jpg" alt="Imagen menù" class="slider-img">
-                </figure>
-                <ion-icon name="chevron-forward-outline" class="rightArrow"></ion-icon>
-                <span>Aplican terminos y condiciones</span>
-            </section>
 
-        </div>
-        
-    </section> -->
 </body>
-
+    <script src="assets/js/funcionalidad.js"></script>
 </html>

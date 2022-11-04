@@ -20,22 +20,21 @@ html {
 
 /* Slider */
 
-.slider-container{
-    
-    width:100%;
-    height:40vh;
+.slider-container {
+    width: 100%;
+    height: 12rem;
     background-image: url(../images/fondo-slider.jpg);
     border-bottom: 5px solid var(--clr-primary);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* color:var(--white); */
-    
-    
+
+
 }
 
 .slider-content{
-    margin-left:20rem;
+    margin-top: 1rem;
+    margin-left:1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,49 +42,215 @@ html {
     text-align: center;
 }
 
+.slider-container .slider-image__menu img{
+    width:12rem;
+    height:7rem;
+    border-radius: 50%;
+}
 
 .slider-text__msj{
-    font-size: 3rem;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 1;
 }
 
 .slider-text__nameMenu{
     font-weight:900;
-    font-size:4rem;
+    font-size:1.3rem;
 }
 
 .slider-text__priceMenu{
     color:var(--yellow);
-    font-size: 10rem;
+    font-size: 3.5rem;
     font-weight:900;
     line-height: .9;
-    letter-spacing: -.5rem;
+    /* letter-spacing: -rem; */
     
 }
 
 .slider-content__text .slider-text__terms{
     display: flex;
     justify-content: flex-start;
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-left: 2rem;
-    font-size:1.3rem;
+    font-size:.8rem;
 }
 
-
-
 .slider-icon__arrow{
-    font-size:3rem;
+    font-size:1.5rem;
     color:var(--white);
 }
 
-.slider-icon__arrow .leftArrow{
-    display: flex;
-    justify-content: flex-start;
-}
-.slider-container .slider-image__menu img{
-    width:55rem;
-    height:20rem;
-    border-radius: 50%;
+@media (min-width: 375px) and (max-width: 500px) {
+
+    .slider-content{
+        margin-left:3rem;
+        
+    }
+       
+    .slider-text__msj{
+        font-size: 1.3rem;
+        
+    }
+    
+    .slider-text__nameMenu{
+        font-size:1.7rem;
+    }
+    
+    .slider-text__priceMenu{
+        font-size: 4rem;
+        letter-spacing: -.1rem;
+        
+    }
+    
+    .slider-icon__arrow{
+        font-size:2rem;
+        
+    }
+    
+    .slider-container .slider-image__menu img{
+        width:13rem;
+        height:10rem;
+        border-radius: 50%;
+    }
+
+}   
+
+@media (min-width: 501px) and (max-width: 700px) {
+
+    .slider-container {
+        
+        height: 15rem;
+    }
+    .slider-content{
+        margin-left:4rem;
+        
+    }
+       
+    .slider-text__msj{
+        font-size: 1.7rem;
+        
+    }
+    
+    .slider-text__nameMenu{
+        font-size:2.4rem;
+    }
+    
+    .slider-text__priceMenu{
+        font-size: 5.5rem;
+        letter-spacing: -.1rem;
+        
+    }
+
+    .slider-container .slider-image__menu img{
+        width:18rem;
+        height:13rem;
+        border-radius: 50%;
+    }
 }
 
+@media (min-width: 701px) and (max-width: 930px) {
+    .slider-container {
+        
+        height: 20rem;
+    }
+    .slider-content{
+        margin-left:4rem;
+        
+    }
+       
+    .slider-text__msj{
+        font-size: 2.5rem;
+        
+    }
+    
+    .slider-text__nameMenu{
+        font-size:3.5rem;
+    }
+    
+    .slider-text__priceMenu{
+        font-size: 8rem;
+        letter-spacing: -.1rem;
+        
+    }
+
+    .slider-container .slider-image__menu img{
+        width:27rem;
+        height:17rem;
+        border-radius: 50%;
+    }
+
+    .slider-content__text .slider-text__terms{
+        margin-left: 2.5rem;
+        font-size:.9rem;
+    }
+    
+}
+@media (min-width: 931px){
+    .slider-container {
+        
+        height: 22rem;
+    }
+    .slider-content{
+        margin-left:10rem;
+        
+    }
+       
+    .slider-text__msj{
+        font-size: 3rem;  
+    }
+    
+    .slider-text__nameMenu{
+        font-size:4rem;
+    }
+    
+    .slider-text__priceMenu{
+        font-size: 9.5rem;
+        letter-spacing: -.4rem;
+        
+    }
+    
+    .slider-container .slider-image__menu img{
+        width:33rem;
+        height:18rem;
+        border-radius: 50%;
+    }
+    
+    .slider-content__text .slider-text__terms{
+        margin-left: 2.8rem;
+        font-size:.9rem;
+    }
+
+}
+
+@media (min-width: 1200px){
+    .slider-container {
+        height: 25rem;
+    }
+    .slider-content{
+        margin-left:30rem;
+        
+    }
+
+    .slider-text__msj{
+        font-size: 3.5rem;  
+    }
+    
+    .slider-text__nameMenu{
+        font-size:4.5rem;
+    }
+    
+    .slider-text__priceMenu{
+        font-size: 12.5rem;
+        letter-spacing: -.4rem;
+        
+    }
+
+    
+    .slider-container .slider-image__menu img{
+        width:45rem;
+        height:19rem;
+        border-radius: 50%;
+    }
+    
+}

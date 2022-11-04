@@ -28,19 +28,20 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
+    overflow: hidden;
 }
 
 .slider-content{
     margin-top: 1rem;
     margin-left:1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     color:var(--white); 
     text-align: center;
+    width: 100%;
 }
+
 
 .slider-container .slider-image__menu img{
     width:12rem;
@@ -77,9 +78,27 @@ html {
 }
 
 .slider-icon__arrow{
-    font-size:1.5rem;
+    font-size:4rem;
     color:var(--white);
+    color: white;
 }
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
 
 @media (min-width: 375px) and (max-width: 500px) {
 

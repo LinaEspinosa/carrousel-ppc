@@ -16,90 +16,61 @@
 
 html {
     font-size: 62.5%;
-}
-
-/* Slider */
-
-.slider-container {
-    width: 100%;
-    height: 12rem;
-    background-image: url(../images/fondo-slider.jpg);
-    border-bottom: 5px solid var(--clr-primary);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-}
-
-.slider-content{
-    margin-top: 1rem;
-    margin-left:1rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color:var(--white); 
-    text-align: center;
-    width: 100%;
-}
-
-
-.slider-container .slider-image__menu img{
-    width:12rem;
-    height:7rem;
-    border-radius: 50%;
-}
-
-.slider-text__msj{
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1;
-}
-
-.slider-text__nameMenu{
-    font-weight:900;
-    font-size:1.3rem;
-}
-
-.slider-text__priceMenu{
-    color:var(--yellow);
-    font-size: 3.5rem;
-    font-weight:900;
-    line-height: .9;
-    /* letter-spacing: -rem; */
     
 }
 
-.slider-content__text .slider-text__terms{
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 2rem;
-    margin-left: 2rem;
-    font-size:.8rem;
+ .slider-container{
+    overflow: hidden;
+    
+}
+
+.slider-container figure{
+    width:500%;
+    animation: 20s slider infinite;
+}
+
+.slider-container figure img{
+    width: 20%;
+    float:left;
 }
 
 .slider-icon__arrow{
-    font-size:4rem;
+    position:absolute;
     color:var(--white);
-    color: white;
+    font-weight: 900;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    font-size:4rem;
+    top:13rem;
+    cursor: pointer;
 }
 
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 3s;
-    animation-name: fade;
-    animation-duration: 3s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
+.leftArrow{
+    left: 2rem;
+    
+}
 
+.rightArrow{
+    right: 2rem;
+    
+
+}
+@keyframes slider{
+    0%{margin-left:0;}
+    20%{margin-left:0;} 
+    
+    25%{margin-left:-100%;}
+    45%{margin-left:-100%;}
+    
+    50%{margin-left:-200%;}
+    70%{margin-left:-200%;}
+     
+    75%{margin-left:-300%;}
+    95%{margin-left:-300%;} 
+    100%{margin-left:-400%;} 
+    
+}
+/* 
 @media (min-width: 375px) and (max-width: 500px) {
 
     .slider-content{
@@ -272,4 +243,4 @@ html {
         border-radius: 50%;
     }
     
-}
+} */

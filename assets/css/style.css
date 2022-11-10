@@ -21,6 +21,7 @@ html {
 
  .slider-container{
     overflow: hidden;
+    border-bottom: 5px solid var(--clr-primary);
     
 }
 

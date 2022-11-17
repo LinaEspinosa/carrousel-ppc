@@ -19,21 +19,20 @@ html {
     
 }
 
- .slider-container{
+.slider-container{
     overflow: hidden;
     border-bottom: 5px solid var(--clr-primary);
+    width:100%    
+}
+
+.slider-container .slider-content{
+    width:100%;
+    float: left;
     position: relative;
-    
 }
 
-.slider-container figure{
-    width:500%;
-    animation: 20s slider infinite;
-}
-
-.slider-container figure img{
-    width: 20%;
-    float:left;
+.slider-container img{
+    width: 100%;
 }
 
 .slider-icon__arrow{
@@ -46,18 +45,17 @@ html {
     top:8rem;
     z-index: 1; 
     cursor: pointer;
+    z-index: 1;
 }
 
 .leftArrow{
     left: 2rem;
-    
 }
 
 .rightArrow{
     right: 2rem;
-    
-
 }
+
 @keyframes slider{
     0%{margin-left:0;}
     20%{margin-left:0;} 
@@ -83,10 +81,6 @@ html {
 
 @media (min-width: 375px) and (max-width: 500px) {
 
-    .slider-content{
-        margin-left:3rem;
-        
-    }
        
     .slider-text__msj{
         font-size: 1.3rem;
@@ -104,8 +98,8 @@ html {
     }
     
     .slider-icon__arrow{
-        top:3rem;
-        font-size: 3rem;
+        visibility: hidden;
+    
     }
     
     .slider-container .slider-image__menu img{
@@ -116,16 +110,7 @@ html {
 
 }   
 
-@media (min-width: 501px) and (max-width: 700px) {
-
-    .slider-container {
-        
-        height: 15rem;
-    }
-    .slider-content{
-        margin-left:4rem;
-        
-    }
+@media (min-width: 501px) and (max-width: 700px) {  
        
     .slider-text__msj{
         font-size: 1.7rem;
@@ -148,20 +133,12 @@ html {
         border-radius: 50%;
     }
     .slider-icon__arrow{
-        top:5rem;
-        font-size: 3rem;
+        top:3rem;
+        font-size: 2.5rem;
     }
 }
 
 @media (min-width: 701px) and (max-width: 930px) {
-    .slider-container {
-        
-        height: 20rem;
-    }
-    .slider-content{
-        margin-left:4rem;
-        
-    }
        
     .slider-text__msj{
         font-size: 2.5rem;
@@ -190,19 +167,11 @@ html {
     }
     
     .slider-icon__arrow{
-        top:8rem;
+        top:4rem;
         font-size: 3rem;
     }
 }
 @media (min-width: 931px){
-    .slider-container {
-        
-        height: 22rem;
-    }
-    .slider-content{
-        margin-left:10rem;
-        
-    }
        
     .slider-text__msj{
         font-size: 3rem;  
@@ -229,17 +198,14 @@ html {
         font-size:.9rem;
     }
 
+    .slider-icon__arrow{
+        top:6.5rem;
+        font-size: 3rem;
+    }
 
 }
 
 @media (min-width: 1200px){
-    .slider-container {
-        height: 25rem;
-    }
-    .slider-content{
-        margin-left:30rem;
-        
-    }
 
     .slider-text__msj{
         font-size: 3.5rem;  
@@ -260,6 +226,11 @@ html {
         width:45rem;
         height:19rem;
         border-radius: 50%;
+    }
+
+    .slider-icon__arrow{
+        top:10rem;
+        font-size: 3rem;
     }
     
 }

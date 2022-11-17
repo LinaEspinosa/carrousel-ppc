@@ -19,20 +19,19 @@ html {
     
 }
 
- .slider-container{
+.slider-container{
     overflow: hidden;
     border-bottom: 5px solid var(--clr-primary);
-    
+    width: 100%;
 }
 
-.slider-container figure{
-    width:500%;
-    animation: 20s slider infinite;
+.slider-container figure .slider-content{
+    width:100%;
+    float: left;
 }
 
 .slider-container figure img{
-    width: 20%;
-    float:left;
+    width: 100%;
 }
 
 .slider-icon__arrow{
@@ -42,20 +41,19 @@ html {
     background-color: rgba(0,0,0,0.5);
     border-radius: 50%;
     font-size:4rem;
-    top:13rem;
+    top:10rem;
     cursor: pointer;
+    z-index: 1;
 }
 
 .leftArrow{
     left: 2rem;
-    
 }
 
 .rightArrow{
     right: 2rem;
-    
-
 }
+
 @keyframes slider{
     0%{margin-left:0;}
     20%{margin-left:0;} 

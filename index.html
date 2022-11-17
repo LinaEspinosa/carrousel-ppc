@@ -17,42 +17,47 @@
     <!-- Icons -->
     <script defer type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
-   
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
 </head>
 
 <body>
+    <main>
+            <div> 
+                <ion-icon name="chevron-back-outline" class="slider-icon__arrow leftArrow" onclick="plusSlides(-1)"></ion-icon>
 
-    <ion-icon name="chevron-back-outline" class="slider-icon__arrow leftArrow" onclick="plusSlides(-1)"></ion-icon>
+                <ion-icon name="chevron-forward-outline" class="slider-icon__arrow rightArrow" onclick="plusSlides(1)"></ion-icon>
+            </div>
+        
+        
+        <section class="slider-container">
 
-    <ion-icon name="chevron-forward-outline"class="slider-icon__arrow rightArrow" onclick="plusSlides(1)"></ion-icon>
+                <section class="slider-content w3-animate-right"> 
+                    <img class="img-carrousel" src="https://cdn.inoutdelivery.com/ppc.inoutdelivery.com/lg/1663952769043-1500x400.jpg" alt="Pizza" style="width:100%">
+                </section>
+
+                <section class="slider-content w3-animate-right"> 
+                    <img class="img-carrousel" src="https://cdn.inoutdelivery.com/ppc.inoutdelivery.com/lg/1648566116126-1550x400_Milanesa.jpg" alt="Milanesa" style="width:100%">
+                </section>
+                
+                <section class="slider-content w3-animate-right "> 
+                    <img class="img-carrousel" src="https://cdn.inoutdelivery.com/ppc.inoutdelivery.com/lg/1649430879957-1550x400_Pizza.jpg" alt="Pizza" style="width:100%">
+                </section>
+                
+                <section class="slider-content w3-animate-right">
+                    <img class="img-carrousel" src="https://cdn.inoutdelivery.com/ppc.inoutdelivery.com/lg/1649430859331-1550x400_Pizzas%26Pastas%20(1).jpg" alt="Pizza" style="width:100%">
+                </section>
+                
+                <section class="slider-content w3-animate-right ">
+                    <img class="img-carrousel" src="https://cdn.inoutdelivery.com/ppc.inoutdelivery.com/lg/1649430879957-1550x400_Pizza.jpg" alt="Pizza" style="width:100%">
+                </section>
+                    
+        </section>
+    </main>
     
-    <div class="slider-container">
-        <figure>
 
-            <img class="img-carrousel"
-                src="https://cdn.inoutdelivery.com/ppc.inoutdelivery.com/lg/1663952769043-1500x400.jpg"
-                alt="Pizza">
-
-            <img class="img-carrousel"
-                src="https://cdn.inoutdelivery.com/ppc.inoutdelivery.com/lg/1648566116126-1550x400_Milanesa.jpg"
-                alt="Milanesa">
-
-            <img class="img-carrousel"
-                src="https://cdn.inoutdelivery.com/ppc.inoutdelivery.com/lg/1649430879957-1550x400_Pizza.jpg"
-                alt="Pizza">
-                <img class="img-carrousel"
-                src="https://cdn.inoutdelivery.com/ppc.inoutdelivery.com/lg/1649430859331-1550x400_Pizzas%26Pastas%20(1).jpg"
-                    alt="Pizza">
-                
-            <img class="img-carrousel"
-                src="https://cdn.inoutdelivery.com/ppc.inoutdelivery.com/lg/1649430879957-1550x400_Pizza.jpg"
-                alt="Pizza">
-                
-        </figure>
-
-    </div>
-
-    <script src="assets/js/funcionalidad.js"></script>
+    
 </body>
-
+    <script src="assets/js/funcionalidad.js"></script>
+    <script src="assets/js/movimiento.js"></script>
 </html>
